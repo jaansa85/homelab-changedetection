@@ -1,0 +1,14 @@
+# Datos persistentes y almacén local
+datastore/
+
+# Variables y secretos
+*.env
+*.key
+*.pem
+
+# Logs
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
