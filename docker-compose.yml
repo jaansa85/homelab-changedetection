@@ -8,7 +8,7 @@ services:
       - /opt/changedetection/datastore:/datastore
     environment:
       - PLAYWRIGHT_DRIVER_URL=ws://sockpuppetbrowser:3000
-      - BASE_URL=http://192.168.1.119:5000
+      - BASE_URL=http://172.16.190.190:5000
       - FETCH_WORKERS=2
     ports:
       - "5000:5000"

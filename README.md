@@ -5,11 +5,11 @@ Plataforma agnóstica de monitorización diferencial de precios, stock y cambios
 ## Información del Entorno
 
 - **Tipo:** Contenedor LXC (VMID 119 en Proxmox VE) sobre almacenamiento `ssd1tb` (NVMe).
-- **IP Local:** `192.168.1.119`
+- **IP Local:** `172.16.190.190`
 - **Tailscale IP:** `100.124.243.90` (`changedetection`)
 - **Puertos:**
-  - `5000`: Interfaz Web de Changedetection.io (`http://192.168.1.119:5000` / `http://100.124.243.90:5000`).
-  - `3000`: Endpoint WebSocket de Playwright stealth (`ws://192.168.1.119:3000`).
+  - `5000`: Interfaz Web de Changedetection.io (`http://172.16.190.190:5000` / `http://100.124.243.90:5000`).
+  - `3000`: Endpoint WebSocket de Playwright stealth (`ws://172.16.190.190:3000`).
 
 ## Componentes del Stack
 
@@ -23,7 +23,7 @@ Plataforma agnóstica de monitorización diferencial de precios, stock y cambios
 ## Integración con Home Assistant
 
 Changedetection está configurado con una notificación global genérica:
-- **URL de Notificación:** `post://192.168.1.117:8123/api/webhook/price_tracker_alert`
+- **URL de Notificación:** `post://172.16.190.110:8123/api/webhook/price_tracker_alert`
 - **Formato:** JSON
 - **Cuerpo:**
   ```json
