@@ -1,9 +1,12 @@
 # Convenciones del Servicio Changedetection
 
+> [!WARNING] ESTADO ACTUAL: APAGADO / PENDIENTE DE REVISIÓN INTEGRAL
+> Este proyecto **nunca ha funcionado bien** en la práctica (problemas con los checks, bloqueos anti-bot/Playwright y notificaciones). Por ese motivo se mantiene **apagado (`stopped`, `onboot: 0`) en el Bloque 6 Sandbox (`LXC 190`) y sin uso activo**. Queda pendiente **revisarlo y rediseñarlo todo de arriba a abajo en un futuro** antes de reactivarlo o promocionarlo.
+
 ## Contexto del Entorno
 
 - **Contenedor:** LXC Debian 12 en Proxmox (`proxmox`).
-- **VMID:** `190` *(Bloque 6 - Sandbox / Incubadora en VLAN 190 Servidores)*.
+- **VMID:** `190` *(Bloque 6 - Sandbox / Incubadora en VLAN 190 Servidores — actualmente `stopped` con `onboot: 0`)*.
 - **IP Estática:** `172.16.190.190/24` (Gateway: `172.16.190.1`, DNS: `172.16.190.254`, `1.1.1.1`, `tag=190`).
 - **Tailscale:** Habilitado con `--tun=userspace-networking` bajo el hostname `changedetection` (`100.124.243.90`).
 - **Ruta de Despliegue en el Host:** `/opt/changedetection/docker-compose.yml`.

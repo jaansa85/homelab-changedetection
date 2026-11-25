@@ -1,10 +1,14 @@
 # Changedetection.io & Playwright Stealth (Price & Stock Tracker)
 
+> [!WARNING]
+> **Estado del Proyecto (Sandbox `LXC 190` — Apagado / Sin uso):**
+> Este servicio **nunca ha funcionado bien** y por ello permanece **apagado (`stopped`) y con el arranque automático deshabilitado (`onboot: 0`)** en el bloque Sandbox. En un futuro habrá que **revisar todo el proyecto de arriba a abajo** (arquitectura de scraping, evasión de bloqueos con Playwright/Sockpuppetbrowser y flujo de alertas) antes de volver a ponerlo en marcha.
+
 Plataforma agnóstica de monitorización diferencial de precios, stock y cambios web para el Homelab.
 
 ## Información del Entorno
 
-- **Tipo:** Contenedor LXC (VMID 119 en Proxmox VE) sobre almacenamiento `ssd1tb` (NVMe).
+- **Tipo:** Contenedor LXC (VMID 190 en Proxmox VE, `stopped` / `onboot: 0`) sobre almacenamiento `ssd1tb` (NVMe).
 - **IP Local:** `172.16.190.190`
 - **Tailscale IP:** `100.124.243.90` (`changedetection`)
 - **Puertos:**
